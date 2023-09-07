@@ -1,8 +1,6 @@
 # Bootcamp Full Stack Engineer > educaciónIT
 
-## Calculadora básica con JavaScript
-
-## BC_Desafio11_Guillermo-Vicente
+## BC_Desafio11_Guillermo-Vicente > Calculadora básica con JavaScript
 
 ### Author
 

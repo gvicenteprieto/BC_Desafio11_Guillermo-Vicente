@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0);
+}
+
+/*  HEADER  */
+.Header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #333;
+    border-bottom: 2px solid #ffffff;
+    height: 100px;
+}
+
+.Header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+/* MAIN */
+.Main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+/* CALCULATOR 1 */
+.Main .article_1 {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin: .5rem;
+    padding: 2rem;
+    height: 900px;
+}
+
+.Main .article_1 .header {
+    align-items: center;
+    height: 4rem;
+}
+
+.Main .article_1 .header h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 10px;
+    border-bottom: 2px solid #746fbb;
+
+}
+
+.Main .article_1 .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main .article_1 .main .calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 5px 5px #585585;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    padding: .5rem;
+    margin-bottom: 1rem;
+   }
+
+.Main .article_1 .main .calculator label {
+    margin: 0;
+    text-align: left;
+    font-size: .9rem;
+}
+
+.Main .article_1 .main .calculator input {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+    background-color: #e7fafa;
+    border: 1px solid #a3a1a1;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 1.2rem;
+}
+
+.Main .article_1 .main .calculator input:focus {
+    outline: none;
+    scale: 1.05;
+}
+
+.Main .article_1 .main .calculator button {
+    width: 53px;
+    height: 53px;
+    margin: 15px 5px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.Main .article_1 .main .calculator #reset {
+    margin-top: 1rem;
+    width: 225px;
+    margin: 5px;
+    padding: 10px;
+    height: 40px;
+    font-size: .9rem;
+    background-color: #585585;
+    border-radius: 5px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.Main .article_1 .main .calculator .operation {
+    margin-top: 1rem;
+    text-align: right;
+    font-size: .80rem;
+    color: #585585;
+}
+
+.Main .article_1 .main .calculator .result {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #585585;
+}
+
+.Main .article_1 .main .calculator #result {
+    width: 265px;
+    height: 4rem;
+    margin: 10px;
+    text-align: right;
+    padding: 5px;
+    background-color: #96fdff;
+    border: 3px solid cornflowerblue;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.Main .article_1 .main .calculator button:hover {
+    background-color: rgb(87, 165, 242);
+    scale: 1.1;
+}
+
+.Main .article_1 .main .calculator .error {
+    color: red;
+    font-size: 0.9rem;
+    translate: 0.5s;
+    border: 2px solid red;
+}
+
+.Main .article_2 .main #calculator .error {
+    color: red;
+    font-size: 0.9rem;
+    translate: 0.5s;
+    border: 2px solid red;
+}
+
+.Main .article_1 .main .calculator .success {
+    color: #004900;
+    font-size: 3rem;
+    border: 2px solid green;
+    text-align: right;
+    scale: 1.05;
+}
+
+.Main .article_1 .main #calculator .success {
+    color: #004900;
+    font-size: 3rem;
+    border: 2px solid green;
+    text-align: right;
+    scale: 1.05;
+}
+
+.Main .article_1 .footer {
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.Main .article_1 .footer p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 5px;
+    text-align: left;
+    margin-left: 10px;
+    width: 100%;
+}
+
+/* CALCULATOR 2 */
+.Main .article_2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin: .5rem;
+    padding: 2rem;
+    height: 900px;
+}
+
+.Main .article_2 .header {
+    align-items: center;
+    height: 4rem;
+}
+
+.Main .article_2 .header h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-align: right;
+    margin: 10px;
+    border-bottom: 2px solid #746fbb;
+}
+
+.Main .article_2 .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main .article_2 .main #calculator {
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 5px 5px #585585;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    padding: 1rem;
+    border: 3px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.Main .article_2 .main #display {
+    background-color: #e7fafa;
+    border: 1px solid #a3a1a1;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+    text-align: right;
+    color: #000;
+    height: 2rem;
+}
+
+.Main .article_2 .main #res{
+    background-color: #96fdff;
+    border: 3px solid cornflowerblue;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: right;
+    color: #000;
+    height: 4rem;
+}
+
+.Main .article_2 .main #buttons {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.Main .article_2 .main #buttons button {
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1rem;
+    padding: .75rem;
+    text-decoration: none;
+}
+
+.Main .article_2 .main #buttons button:hover {
+    background-color: rgb(87, 165, 242);
+    scale: 1.1;
+}
+
+.Main .article_2 .main #buttons #clear {
+    background-color: orange;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    padding: .75rem;
+    text-decoration: none;
+}
+
+.Main .article_2 .main #buttons #clear:hover {
+    background-color: rgb(255, 111, 0);
+    scale: 1.1;
+}
+
+.Main .article_2 .main #equal {
+    background-color: #585585;
+    border: 1px solid #fff;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 0;
+    text-align: center;
+    color: #ffffff;
+    height: 3rem;
+}
+
+.Main .article_2 .main #equal:hover {
+    background-color: #53b2cc;
+    scale: 1.05;
+}
+
+.Main .article_2 .footer {
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Main .article_2 .footer p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 5px;
+    text-align: right;
+    margin-left: 10px;
+    width: 100%;
+}
+
+/* FOOTER */
+.Footer {
+    border-top: 3px solid #585585;
+    margin-top: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Footer p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 5px 0 5px 0;
+    width: auto;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 868px) {
+    .Main {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .Main .article_1 {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .Main .article_1 .header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .Main .article_1 .footer p {
+        align-items: center;
+        height: auto;
+        text-align: left;
+        padding: 10px;
+        font-size: 19px;
+    }
+
+    .Main .article_2 {
+        align-items: center;
+        width: 100%;
+        height: auto;
+    } 
+
+    .Main .article_2 .header h2 {
+        font-size: 1.3rem;
+    }
+
+    .Main .article_2 .footer p {
+        align-items: center;
+        height: auto;
+        text-align: left;
+        padding: 10px;
+        font-size: 19px;
+    }
+} 
+
+@media screen and (min-width: 1024px) {
+    .Main {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .Main .article_1 {
+        width: 50vw;
+        margin: .5rem;
+        padding: 2rem;
+        height: 900px;
+    }
+
+    .Main .article_1 .footer {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .Main .article_2 {
+        width: 50vw;
+        margin: .5rem;
+        padding: 2rem;
+        min-height: 900px;
+    }
+
+    .Main .article_2 .footer {
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Main .article_1 .footer p {
+        text-align: left;
+    }
+
+    .Main .article_2 .footer p {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .Main .article_1 .header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .Main .article_2 .header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .Main .article_1 .footer p {
+        text-align: left;
+        padding: 10px;
+        font-size: 19px;
+    }
+    .Main .article_2 .footer p {
+        text-align: right;
+        padding: 10px;
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Guillermo Vicente - Bootcamp Full Stack Engineer - Desafio 11: Calculadora" />
+    <meta name="copyright" content="Ref. to author | 2023 todos los derechos reservados" />
+    <meta name="description"
+        content="Entrega Desafio 11: Calculadora en JavaScript| Bootcamp Full Stack Engineer para Educacion IT" />
+    <meta name="keywords" content="HTML5, CSS3, Git, GitHub, JavaScript, Calculadora, EducacionIT" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Calculadora</title>
+</head>
+<body>
+    <header class="Header">
+        <h1>Calculadora en JavaScript</h1>
+    </header>
+    <main class="Main">
+        <article class="article_1">
+            <header class="header">
+                <h2>Calculadora version 1.0</h2>
+            </header>
+            <main class="main">
+                <section class="calculator">
+                    <div>
+                        <label for="num1">Número 1</label>
+                        <input type="text" id="num1" placeholder="">
+                    </div>
+                    <div>
+                        <label for="num2">Número 2</label>
+                        <input type="text" id="num2" placeholder="">
+                    </div>
+                    <label for="operation" class="operation">OPERACION</label>
+                    <div>
+                        <button id="add">+</button>
+                        <button id="subtract">-</button>
+                        <button id="multiply">*</button>
+                        <button id="divide">/</button>
+                    </div>
+                    <div class="result">
+                        <label for="result">RESULTADO</label>
+                        <input type="text" id="result" class="clear-display" readonly>
+                    </div>
+                    <div>
+                        <button id="reset">RESET</button>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <p>Calculadora de operaciones básicas.</p>
+                    <p>Ingrese los dos números y seleccione la operación a realizar.</p>
+                    <p>En el display Resultado se mostrará el resultado de la operación.</p>
+                    <p>Se advertirá el ingreso de caracteres alfabéticos con mensaje de error.</p>
+                    <p>Para resetear tada la calculadora, presione el boton RESET.</p>
+                    <p>Puede resetear sólo el resultado haciendo click en el display de resultado.</p>
+                </footer>
+                </footer>
+            </main>
+        </article>
+        <article class="article_2">
+            <header class="header">
+                <h2>Calculadora version 2.0</h2>
+            </header>
+            <main class="main">
+                <section id="calculator">
+                    <div id="display"></div>
+                    <div id="res" class="clearDisplay"></div>
+
+                    <div id="buttons">
+                        <button id="seven" class="number">7</button>
+                        <button id="eight" class="number">8</button>
+                        <button id="nine" class="number">9</button>
+                        <button id="divide-v2">/</button>
+
+                        <button id="four" class="number">4</button>
+                        <button id="five" class="number">5</button>
+                        <button id="six" class="number">6</button>
+                        <button id="multiply-v2">*</button>
+
+                        <button id="one" class="number">1</button>
+                        <button id="two" class="number">2</button>
+                        <button id="three" class="number">3</button>
+                        <button id="subtract-v2">-</button>
+
+                        <button id="clear">C</button>
+                        <button id="zero" class="number">0</button>
+                        <button id="decimal">.</button>
+                        <button id="add-v2">+</button>
+                    </div>
+                    <div id="equal">=</div>
+                </section>
+            </main>
+            <footer class="footer">
+                <p>Calculadora acorde al Layout propuesto.</p>
+                <p>Ingrese los números y seleccione la operacion a realizar.</p>
+                <p>Puede elegir más de una entrada. Finalice presionando botón
+                    <strong>=</strong>.</p>
+                <p>En el display de principal se mostrará el resultado de la operación.</p>
+                <p>Para resetear toda la calculadora, presione el boton C.</p>
+                <p>Puede resetear sólo el resultado haciendo click en el display de resultado</p>
+            </footer>
+        </article>
+    </main>
+    <footer class="Footer">
+        <p>Bootcamp Full Stack Engineer - EducacionIt</p>
+        <p>2023 - Guillermo Vicente</p>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

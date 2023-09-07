@@ -125,7 +125,13 @@ function divide() {
     } else if (regex.test(num1) && regex.test(num2)) {
         result.classList.remove("error");
         result.classList.add("success");
-        result.value = (Number(num1) / Number(num2)).toFixed(12);
+        if (Number(num1) % Number(num2) === 0) {
+            result.value = Number(num1) / Number(num2);
+        } else if (Number(num1) % Number(num2) !== 0 && (Number(num1) / Number(num2)) % 1 === 0) {
+            result.value = Number(num1) / Number(num2);
+        } else {
+            result.value = (Number(num1) / Number(num2)).toFixed(12);
+        }
     } else {
         error();
     }
@@ -191,7 +197,6 @@ decimal.addEventListener('click', function (e) {
     }
 });
 
-//recorriendo todos los números con un for y agregando el evento click
 let numbers = document.querySelectorAll('.number');
 
 for (let i = 0; i < numbers.length; i++) {

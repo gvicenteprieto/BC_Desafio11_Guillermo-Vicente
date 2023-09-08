@@ -36,7 +36,7 @@ html {
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 900px;
+    height: 1000px;
 }
 
 /* CALCULATOR 1 */
@@ -92,19 +92,21 @@ html {
     margin: 0;
     text-align: left;
     font-size: .9rem;
+    margin-top: 1.5rem;
+    color: #585585;
 }
 
 .Main .article_1 .main .calculator input {
-    width: 150px;
+    width: 165px;
     height: 40px;
-    margin: 10px;
     text-align: center;
     padding: 5px;
     background-color: #e7fafa;
     border: 1px solid #a3a1a1;
     border-radius: 5px;
     transition: 0.5s;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
 }
 
 .Main .article_1 .main .calculator input:focus {
@@ -128,9 +130,9 @@ html {
 }
 
 .Main .article_1 .main .calculator #reset {
-    margin-top: 1rem;
     width: 225px;
     margin: 5px;
+    margin-top: .5rem;
     padding: 10px;
     height: 40px;
     font-size: .9rem;
@@ -141,31 +143,24 @@ html {
 }
 
 .Main .article_1 .main .calculator .operation {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     text-align: right;
     font-size: .80rem;
     color: #585585;
 }
 
-.Main .article_1 .main .calculator .result {
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #585585;
-}
-
 .Main .article_1 .main .calculator #result {
-    width: 265px;
+    background-color: #96fdff;
+    width: 260px;
     height: 4rem;
     margin: 10px;
-    text-align: right;
-    padding: 5px;
-    background-color: #96fdff;
     border: 3px solid cornflowerblue;
     border-radius: 5px;
+    text-align: right;
+    padding: 5px;
     transition: 0.5s;
-    font-size: 1.2rem;
     text-align: center;
+    margin: 1.5rem;
 }
 
 .Main .article_1 .main .calculator button:hover {
@@ -173,32 +168,21 @@ html {
     scale: 1.1;
 }
 
-.Main .article_1 .main .calculator .error {
+ .Main .article_1 .main .calculator .error {
     color: red;
-    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95rem;
     translate: 0.5s;
     border: 2px solid red;
-}
-
-.Main .article_2 .main #calculator .error {
-    color: red;
-    font-size: 0.9rem;
-    translate: 0.5s;
-    border: 2px solid red;
-}
+    scale : 1.05;
+} 
 
 .Main .article_1 .main .calculator .success {
     color: #004900;
-    font-size: 3rem;
-    border: 2px solid green;
-    text-align: right;
-    scale: 1.05;
-}
-
-.Main .article_1 .main #calculator .success {
-    color: #004900;
-    font-size: 3rem;
-    border: 2px solid green;
+    font-size: 1.2rem;
+    border: 3px solid green;
     text-align: right;
     scale: 1.05;
 }
@@ -265,24 +249,48 @@ html {
     background-color: #e7fafa;
     border: 1px solid #a3a1a1;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     padding-right: 1rem;
     text-align: right;
     color: #000;
-    height: 2rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.Main .article_2 .main #res{
+.Main .article_2 .main #res {
     background-color: #96fdff;
+    height: 4rem;
+    margin: 0;
     border: 3px solid cornflowerblue;
     border-radius: 5px;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
+     margin-bottom: 1rem;
     text-align: right;
-    color: #000;
-    height: 4rem;
+    transition: 0.5s;
+   }
+
+.Main .article_2 .main #calculator .error {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.95rem;
+    translate: 0.5s;
+    border: 2px solid red;
+    scale : 1.05;
+}
+.Main .article_2 .main #calculator .success {
+    color: #004900;
+    font-size: 1.2rem;
+    border: 3px solid green;
+    text-align: right;
+    scale: 1.05;
+    padding: 1rem;
+    translate: 0.5s;
 }
 
 .Main .article_2 .main #buttons {
@@ -375,7 +383,7 @@ html {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 768px) {
     .Main {
         background-color: rgb(0, 0, 0);
         display: flex;
